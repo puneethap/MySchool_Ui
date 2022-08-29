@@ -2,22 +2,14 @@ import {
   Avatar,
   Box,
   Button,
-  Card,
-  CardActionArea,
-  Checkbox,
-  CssBaseline,
-  FormControlLabel,
   Grid,
   InputAdornment,
-  Link,
-  makeStyles,
   Paper,
   TextField,
   Typography,
 } from "@mui/material";
 import "./LoginPage.scss";
 import schoolicon from "./schoolicon.png";
-import schoolmanagementicon from "./school-software.png";
 import PersonIcon from '@mui/icons-material/Person';
 import LockIcon from '@mui/icons-material/Lock';
 
