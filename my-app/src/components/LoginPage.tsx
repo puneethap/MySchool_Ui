@@ -7,6 +7,7 @@ import {
   Paper,
   TextField,
   Typography,
+  Link
 } from '@mui/material'
 import './LoginPage.scss'
 import schoolicon from './schoolicon.png'
@@ -162,6 +163,7 @@ const LoginPage: FunctionComponent<{}> = (): ReactElement => {
                 >
                   Log in
                 </Button>
+                <Link href='/getOTP'>Forgot password?</Link>
               </Box>
             </Grid>
           </Box>
