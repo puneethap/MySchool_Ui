@@ -7,7 +7,7 @@ import {
   } from '@mui/material'
 import { LoginService } from '../services/login-service'
 
-const SearchOrValidateOrAuthenticate: FunctionComponent<{}> = (): ReactElement => {
+const GetOTP: FunctionComponent<{}> = (props): ReactElement => {
     const [email, setEmail] = useState('')
     const [errorMessage, setErrorMessage] = useState('')
     const navigate = useNavigate()
@@ -50,4 +50,4 @@ const SearchOrValidateOrAuthenticate: FunctionComponent<{}> = (): ReactElement =
         </>
     )
 }
-export default SearchOrValidateOrAuthenticate
+export default GetOTP

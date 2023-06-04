@@ -5,7 +5,7 @@ import { AxiosConfigurationService } from './axios/axios-configuration.service'
 import HomePage from './components/HomePage'
 import LoginPage from './components/LoginPage'
 import { BrowserRouter as Router } from 'react-router-dom'
-import SearchOrValidateOrAuthenticate from './components/SearchOrValidateOrAuthenticate'
+import GetOTP from './components/GetOTP'
 import ValidateOTP from './components/ValidateOTP'
 import ResetPassword from './components/ResetPassword'
 
@@ -27,7 +27,7 @@ function App() {
         <Routes>
           <Route path="/home/:userName" element={<HomePage />} />
           <Route path="/" element={<LoginPage />} />
-          <Route path="/getOTP" element={<SearchOrValidateOrAuthenticate />} />
+          <Route path="/getOTP" element={<GetOTP />} />
           <Route path="/validateOTP" element={<ValidateOTP />} />
           <Route path="/resetPassword" element={<ResetPassword />} />
         </Routes>
