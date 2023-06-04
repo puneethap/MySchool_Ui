@@ -24,4 +24,34 @@ export class LoginService {
       (error) => error,
     )
   }
+
+  async getOTP(email: String) {
+    const baseUrl = '/mySchool'
+    const url = `${baseUrl}/forgotPassword?email=${email}`
+
+    return this.httpService.post(url, {}).then(
+      (response) => response,
+      (error) => error,
+    )
+  }
+
+  async validateOTP(token: String, otp: String) {
+    const baseUrl = '/mySchool'
+    const url = `${baseUrl}/validatePasswordResetOtp?token=${token}&&otp=${otp} `
+
+    return this.httpService.post(url, {}).then(
+      (response) => response,
+      (error) => error,
+    )
+  }
+
+  async resetPassword(token: String, password: String) {
+    const baseUrl = '/mySchool'
+    const url = `${baseUrl}/resetPassword?token=${token}&&password=${password} `
+
+    return this.httpService.post(url, {}).then(
+      (response) => response,
+      (error) => error,
+    )
+  }
 }
